@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("871130.jpg"); /* Replace 'path/to/your/image.jpg' with your image file path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  .container {
+    background: rgba(2, 136, 209, 0.8); /* Transparent bluish background color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+    color: black; /* Adjust text color for better readability */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for hover effect */
+  }
+  
+  .container:hover {
+    transform: scale(1.02); /* Scale up slightly on hover */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Increase shadow on hover for depth effect */
+  }
+  
+  h1,
+  h2 {
+    text-align: center;
+    /* Adjust text color for better readability */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input,
+  textarea,
+  button {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid black;
+    border-radius: 4px;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for border and box-shadow */
+  }
+  
+  input[type="text"]::placeholder,
+  textarea::placeholder {
+    color: #999; /* Placeholder text color */
+    transition: color 0.3s; /* Smooth transition for color change */
+  }
+  
+  input[type="text"]:hover::placeholder,
+  textarea:hover::placeholder {
+    color: #777; /* Placeholder text color on hover */
+  }
+  
+  input[type="text"]:focus,
+  textarea:focus {
+    border-color: #007bff; /* Change border color on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Add box shadow on focus */
+  }
+  
+  input[type="text"]:focus::placeholder,
+  textarea:focus::placeholder {
+    color: #555; /* Placeholder text color on focus */
+  }
+  
+  input[type="text"],
+  textarea {
+    background-color: rgba(
+      255,
+      255,
+      255,
+      0.9
+    ); /* Semi-transparent background for inputs */
+    color: black; /* Adjust text color for inputs */
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border: none;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   /* Semi-transparent background for tasks */
+    color: black; /* Adjust text color for tasks */
+  }
+  
+  li:last-child {
+    border-bottom: none;
+  }
+  
+  .task-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  button.edit,
+  button.delete {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+  }
+  
+  button.edit:hover,
+  button.delete:hover {
+    text-decoration: underline;
+  }
